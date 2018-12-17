@@ -1,0 +1,14 @@
+<app-header [title]="title"></app-header>
+<main>
+  <app-control-panel
+    [partText]="partText"
+    [text]="text"
+    (updateText)="updateTextHandle($event)">
+
+  </app-control-panel>
+  <app-file
+    [changesText]="newText"
+    (onChangesCut)="onChangesCut($event)"
+    (onText)="onText($event)">
+  </app-file>
+</main>
